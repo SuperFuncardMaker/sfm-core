@@ -1,0 +1,28 @@
+{
+  "name": "sfm-core",
+  "version": "0.1.0",
+  "description": "Base core for Super Funcard Maker",
+  "main": "build/index",
+  "types": "build/index.d.ts",
+  "repository": "https://github.com/SuperFuncardMaker/sfm-core.git",
+  "author": "Lancel Thaledric <thaledric@gmail.com>",
+  "license": "GPL",
+  "private": true,
+  "esm": {
+    "await": true,
+    "mode": "auto"
+  },
+  "dependencies": {
+    "esm": "^3.0.79"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  },
+  "scripts": {
+    "prepublish": "yarn run tsc:build",
+    "tsc": "tsc --watch",
+    "tsc:build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
